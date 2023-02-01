@@ -1,15 +1,12 @@
 const form = document.getElementById('form');
 const todo = document.getElementById('todo');
-const btn = document.getElementById('addButton');
 const listItems = document.querySelector('.list-items');
 
 
 form.addEventListener('submit',function(e){
     e.preventDefault();
-    console.log('bouton cliqué');
     const todoValue = todo.value;
     
-
     let item= `
                 <div class ="item">
                     <p>${todoValue}</p>

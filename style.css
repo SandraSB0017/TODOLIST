@@ -27,6 +27,7 @@ body{
 
 #todo-list{
     background-color: white;
+    border-radius: 5px;
     color: #1E2337;
     width: 50%;
     padding: 4rem;
@@ -44,22 +45,30 @@ body{
     border-width: 0px 0px 1px 0px;/*ligne inférieure seulement*/
 }
 button{
+    margin-left: 1rem;
     border: none;
     width: 4rem;
     height: 4rem;
+    border-radius: 5px;
+    background-color: rgb(222, 221, 221);
 }
 .item{
     text-align: justify;
     margin: 1rem;
     background-color: rgb(222, 221, 221);
     font-size: 2rem;
-    color: rgb(105, 19, 105);
+    color: rgb(30, 14, 80);
     display: flex;
     align-items: center;
+    border-radius: 5px;
 }
+
 .item p{
     flex: 1;
     padding: 2rem;
+}
+.item p::first-letter{
+    text-transform: capitalize;
 }
 .item button {
     font-size: 2rem;
@@ -67,11 +76,13 @@ button{
 }
 .item button.btn-archive{
     font-size: 2rem;
-    background-color: rgb(102, 205, 102);
+    background-color: rgb(12, 147, 12);
+    border-radius: 5px;
 }
 .item button.btn-delete{
     font-size: 2rem;
-    background-color: rgb(188, 102, 102);
+    background-color: rgb(180, 52, 52);
+    border-radius: 5px;
 }
 .done{
     text-decoration: line-through;
